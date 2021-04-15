@@ -1,0 +1,126 @@
+ <main className={styles.main}>
+        <h1 className={styles.title}>
+          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        </h1>
+
+        <p className={styles.description}>
+          Get started by editing{' '}
+          <code className={styles.code}>pages/index.js</code>
+        </p>
+
+        <div className={styles.grid}>
+          <a href="https://nextjs.org/docs" className={styles.card}>
+            <h3>Documentation &rarr;</h3>
+            <p>Find in-depth information about Next.js features and API.</p>
+          </a>
+
+          <a href="https://nextjs.org/learn" className={styles.card}>
+            <h3>Learn &rarr;</h3>
+            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          </a>
+
+          <a
+            href="https://github.com/vercel/next.js/tree/master/examples"
+            className={styles.card}
+          >
+            <h3>Examples &rarr;</h3>
+            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          </a>
+
+          <a
+            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            className={styles.card}
+          >
+            <h3>Deploy &rarr;</h3>
+            <p>
+              Instantly deploy your Next.js site to a public URL with Vercel.
+            </p>
+          </a>
+        </div>
+      </main>
+
+
+
+
+      import styles from '../styles/Home.module.css';
+
+export default function Home() {
+  return (
+    <div className={styles.container}>
+      <div className="homePage">
+        <div className="left">
+          <img src="/Group 690.svg" alt="Vercel Logo" className={styles.logo} />
+          <p className="statement">
+            Build.
+            <br />
+            Review.
+            <br />
+            Ship.
+            <br />
+          </p>
+          <p className="info">
+            The next big thing starts here.
+            <br /> Get Prodify and be the first to market
+            <br /> with an integrated product that you love
+          </p>
+          <button className="build-button">Let's build</button>
+        </div>
+        <div className="gradiant">
+          <header>
+            <nav>
+              <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Pricing</li>
+                <li>Resources</li>
+                <li>
+                  Sign In
+                  <img
+                    src="/Vector.svg"
+                    alt="Vercel Logo"
+                    className={styles.arrow}
+                  />
+                </li>
+              </ul>
+            </nav>
+          </header>
+          <div className="card">
+            <div className="bar"></div>
+            <div className="flex">
+              <div className="first">
+                <img
+                  src="/User 1.png"
+                  alt="Vercel Logo"
+                  className={styles.user1}
+                />
+                <img
+                  src="/video.png"
+                  alt="Vercel Logo"
+                  className={styles.video}
+                />
+                <button className="alarm-button">
+                  <img
+                    src="/alarm.png"
+                    alt="Vercel Logo"
+                    className={styles.alarm}
+                  />
+                </button>
+              </div>
+              <div className="second"></div>
+              <div className="third"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer className={styles.footer}>
+        <a
+          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Powered by{' '}
+        </a>
+      </footer>
+    </div>
+  );
+}
